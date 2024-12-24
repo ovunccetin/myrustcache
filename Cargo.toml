@@ -1,0 +1,17 @@
+[package]
+name = "my_rust_cache"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+threadpool = "1.8.1"
+log = "0.4.22"
+env_logger = "0.11.6"
+
+[[bin]]
+name = "client"
+path = "src/client/main.rs"
+
+[[bin]]
+name = "server"
+path = "src/server/main.rs"
